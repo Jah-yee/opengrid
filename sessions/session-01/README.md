@@ -20,7 +20,7 @@
 When you switch on a kettle, a power station somewhere has to produce a little more electricity at that very moment. The grid has almost no storage, so what is produced must match what is used, second by second. What tells the whole country that demand has beaten supply? It is the frequency of the alternating current: 50 Hz when all is well, a little lower when demand wins. How big a shortage makes the frequency sag by 0.1 Hz?
 
 ## B. Concept and theory
-The grid is one big spinning system. Every power station turbine and many motors turn in step at the grid frequency, 50 Hz in India and Europe. If generators supply less power than the load takes, the missing energy comes out of the rotating machines, they slow, and the frequency falls. If supply is higher than demand, they speed up and the frequency rises. Demand changes through the day (a morning bump, an evening peak and a night dip), so generators ramp up and down. Each unit has a size and a ramp rate (megawatts it can add per hour); cheap units are slow, flexible gas and hydro are fast. In Session 3 we derive the frequency dynamics; here we use their steady-state result for a small toy grid of 1000 MW: the frequency change is 50 Hz times the imbalance divided by (1000 MW times 21), where 21 is the grid stiffness 1/R + D of Session 3 (droop R = 0.05 gives 20, load damping D = 1 gives 1).
+The grid is one big spinning system. Every power station turbine and many motors turn in step at the grid frequency, 50 Hz in India and Europe. If generators supply less power than the load takes, the missing energy comes out of the rotating machines, they slow, and the frequency falls. If supply is higher than demand, they speed up and the frequency rises. Demand changes through the day (a morning bump, an evening peak and a night dip), so generators ramp up and down. Each unit has a size and a ramp rate (megawatts it can add per hour); cheap units are slow, flexible gas and hydro are fast. In Session 3 we derive the frequency dynamics; here we use their steady-state result for a small toy grid of 1000 MW. The frequency change is 50 Hz times the imbalance divided by (1000 MW times 21). The number 21 is the grid stiffness 1/R + D from Session 3: the droop R = 0.05 gives 20, and the load damping D = 1 gives 1.
 
 | Symbol | Meaning | Unit |
 |---|---|---|
@@ -150,6 +150,8 @@ Score yourself with [RUBRIC.md](../../RUBRIC.md). Print the [activity sheet](act
 - **ramp rate**: how fast a generator can raise or lower its output, in MW per hour
 - **merit order**: loading the cheapest generators first
 - **imbalance**: supply minus demand
+- **droop R**: the governor setting that decides how much a generator slows down when the frequency drops; 0.05 here, so 1/R = 20
+- **load damping D**: the part of the frequency response that comes from demand itself shrinking as the frequency falls; 1 here
 
 ## Finish
 1. Do the three coding tasks in [exercises.md](exercises.md).

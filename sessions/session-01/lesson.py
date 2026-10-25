@@ -89,7 +89,7 @@ def run_day(step_hours=1.0, ramp_scale=1.0):
 # %% [markdown]
 # ## Step 3: balance and frequency
 # The imbalance is supply minus demand. The whole grid behaves like a heavy flywheel: when
-# supply is short it slows, when supply is long it speeds up. In Session 3 we derive this; for
+# supply is short it slows, when supply exceeds demand it speeds up. In Session 3 we derive this; for
 # now we use its steady-state result: frequency change = f0 * imbalance / (BASE * STIFF).
 
 # %%
@@ -105,7 +105,8 @@ def grid_frequency(supply, demand):
 
 # %% [markdown]
 # ## Step 4: see it
-# Top: demand and supply through the day. Middle: units stacked. Bottom: the frequency.
+# Top panel: the units stacked under the demand curve through the day.
+# Bottom panel: the frequency, once for normal ramp rates and once for ramp rates cut to a quarter.
 
 # %%
 if __name__ == "__main__":
