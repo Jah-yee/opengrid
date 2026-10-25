@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Fix typos and unclear sentences in the Session 1 notes",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nThe Session 1 notes may contain typos or sentences that a first-year student finds confusing.\n\n## Context\nBeginners judge the whole repo by Session 1.\n\n## Expected outcome\nA clearer `sessions/session-01/README.md` and `lesson.py` comments.\n\n## Relevant files\n`sessions/session-01/README.md`, `sessions/session-01/lesson.py`\n\n## Acceptance criteria\n- [ ] At least three improvements\n- [ ] `python start.py test` still passes\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add a solar bump to the daily demand curve",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "feature"
+    ],
+    "body": "## Problem\nSession 1 shows a demand curve with no solar generation, so there is no midday dip and no steep evening ramp.\n\n## Context\nThe solar dip (the duck curve) is the reason inertia and fast ramping matter more every year.\n\n## Expected outcome\nA `solar_curve(hour)` function and a figure showing demand minus solar.\n\n## Relevant files\n`sessions/session-01/lesson.py`\n\n## Acceptance criteria\n- [ ] Function importable and tested in the checkpoint\n- [ ] A new figure with labelled axes and units\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add Session 4: synthetic inertia from a battery",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nThe roadmap's first milestone does not exist yet.\n\n## Context\nSee `promo/roadmap.md`, Session 4. Students ask how a battery can replace the inertia of a retired power station.\n\n## Expected outcome\n`sessions/session-04/` with README (sections A to F), lesson, checkpoint, exercises and app in the same style as Sessions 1 to 3.\n\n## Relevant files\n`promo/roadmap.md`, `sessions/session-03/lesson.py`\n\n## Acceptance criteria\n- [ ] Checkpoint prints PASS and the roadmap checkpoint is met\n- [ ] Added to the tests\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Add a governor headroom limit to the frequency model",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nThe shipped governor can add any amount of power, which hides the importance of spinning reserve.\n\n## Context\nRoadmap Session 5. The settled frequency with limited headroom is lower than the droop formula.\n\n## Expected outcome\nA headroom option in `simulate_frequency` and a figure comparing it with the unlimited governor.\n\n## Relevant files\n`sessions/session-03/lesson.py`, `promo/roadmap.md`\n\n## Acceptance criteria\n- [ ] Settled frequency matches the hand formula with the headroom limit\n- [ ] Checkpoint added\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Reproduce the Target: a multi-generator grid with a power-factor panel",
+    "labels": [
+      "advanced",
+      "feature"
+    ],
+    "body": "## Problem\nThe Target animation shows several generators, a load, a frequency trace and a power triangle; there is no public implementation.\n\n## Context\nThe code behind the Target is private on purpose. The roadmap gives the path.\n\n## Expected outcome\nYour own implementation, written from the roadmap, plus an animation like the Target.\n\n## Relevant files\n`promo/roadmap.md`\n\n## Acceptance criteria\n- [ ] Frequency trace with nadir and settled value that match hand formulas\n- [ ] Short write-up of your method\n\n## Difficulty\nadvanced"
+  },
+  {
+    "title": "Translate the Session 1 notes into Hindi",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Hindi cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.hi.md` with a faithful Hindi translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Telugu",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Telugu cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.te.md` with a faithful Telugu translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Tamil",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Tamil cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ta.md` with a faithful Tamil translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Malayalam",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Malayalam cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ma.md` with a faithful Malayalam translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  }
+]
